@@ -90,6 +90,12 @@
 				}]
 			},
 			options: {
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 32,
+					}
+				},
 				plugins: {
 					datalabels: {
 						display: false
@@ -97,8 +103,8 @@
 					legend: {
 						labels: {
 							font: {
-								size: 24,
-							weight: '600',
+								size: 32,
+								weight: '600',
 							}
 						}
 					}
@@ -278,15 +284,13 @@
 				}]
 			},
 			options: {
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 32,
+					}
+				},
 				plugins: {
-					legend: {
-						labels: {
-							font: {
-								size: 24,
-							   weight: '600',
-							}
-						}
-					},
 					datalabels: {
 						display: false
 					}
@@ -323,17 +327,21 @@
 			data: data,
 			options: {
 				responsive: false,
+				title: {
+					display: true,
+					text: '居住現況',
+					fontSize: 24
+				},
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 14
+					}
+				},
 				plugins: {
-					legend: {
-						position: 'top',
-					},
 					datalabels: {
 						formatter: percent_formatter,
 						color: '#fff',
-					},
-					title: {
-						display: true,
-						text: '居住現況'
 					}
 				}
 			}
@@ -360,17 +368,21 @@
             data: data,
             options: {
 				responsive: false,
+				title: {
+					display: true,
+					text: '是否有租屋需求',
+					fontSize: 24
+				},
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 14
+					}
+				},
 				plugins: {
 					datalabels: {
 						formatter: percent_formatter,
 						color: '#fff',
-					},
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: '是否有租屋需求'
 					}
 				}
 			}
@@ -397,17 +409,21 @@
             data: data,
             options: {
 				responsive: false,
+				title: {
+					display: true,
+					text: '是否知道房客可申請租屋補貼',
+					fontSize: 24
+				},
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 14
+					}
+				},
 				plugins: {
 					datalabels: {
 						formatter: percent_formatter,
 						color: '#fff',
-					},
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: '是否知道房客可申請租屋補貼'
 					}
 				}
 			}
@@ -434,17 +450,21 @@
             data: data,
             options: {
 				responsive: false,
+				title: {
+					display: true,
+					text: '是否申請過租屋補貼',
+					fontSize: 24
+				},
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 14
+					}
+				},
 				plugins: {
 					datalabels: {
 						formatter: percent_formatter,
 						color: '#fff',
-					},
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: '是否申請過租屋補貼'
 					}
 				}
 			}
@@ -471,17 +491,21 @@
             data: data,
             options: {
 				responsive: false,
+				title: {
+					display: true,
+					text: '申請租屋補貼者的核可比率',
+					fontSize: 24
+				},
+				legend: {
+					display: true,
+					labels: {
+						fontSize: 14
+					}
+				},
 				plugins: {
 					datalabels: {
 						formatter: percent_formatter,
 						color: '#fff',
-					},
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: '申請租屋補貼者的核可比率'
 					}
 				}
 			}
@@ -507,17 +531,21 @@
 			tooltips: {
 				enabled: false
 			},
+			title: {
+				display: true,
+				text: '不申請租屋補貼的原因(有租屋需求者)',
+				fontSize: 24
+			},
+			legend: {
+				display: true,
+				labels: {
+					fontSize: 14
+				}
+			},
    			plugins: {
      			datalabels: {
 					formatter: percent_formatter,
        				color: '#fff',
-				},
-				legend: {
-					position: 'top',
-				},
-				title: {
-					display: true,
-					text: '不申請租屋補貼的原因(有租屋需求者)'
 				}
 			}
 		};
